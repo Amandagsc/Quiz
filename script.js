@@ -97,10 +97,10 @@ function showResultBox(){
     result_box.classList.add("activeResult");
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3) {
-        let scoreTag = '<span>Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
+        let scoreTag = '<span>Parabéns Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
         scoreText.innerHTML = scoreTag;
     }
-    if (userScore > 3) {
+    else if (userScore > 1) {
         let scoreTag = '<span>Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
         scoreText.innerHTML = scoreTag;
     }
