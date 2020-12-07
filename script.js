@@ -27,12 +27,30 @@ continue_btn.onclick = ()=>{
 
 let que_count = 0;
 let que_numb = 1;
-let counter
+let counter;
+let counterLine;
+let userScore = 0;
 
 const next_btn = quiz_box.querySelector(".next_btn");
 const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
+
+restart_quiz.onclick = ()=>{
+    result_box.classList.remove("activeResult");
+    quiz_box.classList.add("activeQuiz");
+    let que_count = 0;
+    let que_numb = 1;
+    let userScore = 0;
+    showQuestions(que_count);
+    queCounter(que_numb);
+    next_btn.style.display = "none";
+}
+quit_quiz.onclick = ()=>{
+    window.location.reload();
+}
+
+
 //Se o botão Next for clicado
 next_btn.onclick = ()=>{
     if (que_count < questions.length - 1){
@@ -119,5 +137,5 @@ function showResultBox(){
 function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total_que");
     let totalQues_countTag = '<span><p>' + index +'</p>of<p>' + questions.length + '</p>Questions</span>';
-    bottom_ques_counter.innerHTML = totalQuescountTag;
+    bottom_ques_counter.innerHTML = totalQues_countTag;
 }

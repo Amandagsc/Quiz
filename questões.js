@@ -124,7 +124,7 @@ let questions = [
     {
         numb: 12,
             question: "O paciente Denny Duquette precisava de um coração novo, mas houve uma disputa entre dois cirurgiões para conseguir o coração. Quem era esses dois cirurgiões?",
-            answer: "Dr. Burker e Dra Hanh",
+            answer: "Dr. Burker e Dra. Hanh",
             options: [
                     "Dr. Burker e Dra. Hanh",
                     "Dr. Shepherd e Dr. Burker",
