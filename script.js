@@ -70,6 +70,7 @@ function optionSelected(answer){
     let allOptions = option_list.children.length;
     if(userAns == correctAns){
         userScore += 1;
+        console.log(userScore)
         answer.classList.add("correct");
         console.log("Answer is correct");
     }else{
@@ -94,6 +95,11 @@ function showResultBox(){
     info_box.classList.remove("activeInfo");
     quiz_box.classList.remove("activeQuiz");
     result_box.classList.add("activeResult");
+    const scoreText = result_box.querySelector(".score_text");
+    if (userScore > 3) {
+        let scoreTag = '<span>Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
+        scoreText.innerHTML = scoreTag;
+    }
 }
 
 
@@ -104,5 +110,5 @@ function showResultBox(){
 function queCounter(index){
     const bottom_ques_counter = quiz_box.querySelector(".total_que");
     let totalQues_countTag = '<span><p>' + index +'</p>of<p>' + questions.length + '</p>Questions</span>';
-    bottom_ques_counter.innerHTML = totalQues_countTag;
+    bottom_ques_counter.innerHTML = totalQuescountTag;
 }
