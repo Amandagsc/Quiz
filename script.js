@@ -37,8 +37,8 @@ const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
 restart_quiz.onclick = ()=>{
-    result_box.classList.remove("activeResult");
     quiz_box.classList.add("activeQuiz");
+    result_box.classList.remove("activeResult");
     let que_count = 0;
     let que_numb = 1;
     let userScore = 0;
