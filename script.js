@@ -69,6 +69,7 @@ function optionSelected(answer){
     let correctAns = questions[que_count].answer;
     let allOptions = option_list.children.length;
     if(userAns == correctAns){
+        userScore += 1;
         answer.classList.add("correct");
         console.log("Answer is correct");
     }else{
