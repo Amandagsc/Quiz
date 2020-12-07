@@ -123,7 +123,7 @@ function showResultBox(){
         scoreText.innerHTML = scoreTag;
     }
     else{
-        let scoreTag = '<span>Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
+        let scoreTag = '<span>Infelizmente você não acertou nenhuma!s<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
         scoreText.innerHTML = scoreTag;
     }
 }
