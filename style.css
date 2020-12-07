@@ -238,11 +238,6 @@ footer .next_btn:hover{
     pointer-events: none;
     transform: translate(-50%, -50%) scale(0.9);
 }
-.result_box .icon{
-    font-size: 100px;
-    color: #007bff;
-    margin-bottom: 10px;
-}
 .result_box .complete_text{
     font-size: 20px;
     font-weight: 500;
