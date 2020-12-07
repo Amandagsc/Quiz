@@ -100,6 +100,15 @@ function showResultBox(){
         let scoreTag = '<span>Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
         scoreText.innerHTML = scoreTag;
     }
+    if (userScore > 3) {
+        let scoreTag = '<span>Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
+        scoreText.innerHTML = scoreTag;
+    }
+    else{
+        let scoreTag = '<span>Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
+        scoreText.innerHTML = scoreTag;
+    }
+
 }
 
 
