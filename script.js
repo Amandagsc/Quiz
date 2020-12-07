@@ -90,9 +90,9 @@ function optionSelected(answer){
     next_btn.style.display = "block";
 }
 function showResultBox(){
-        info_box.classList.remove("activeInfo");
-        quiz_box.classList.remove("activeQuiz");
-        result_box.classList.add("activeResult");
+    info_box.classList.remove("activeInfo");
+    quiz_box.classList.remove("activeQuiz");
+    result_box.classList.add("activeResult");
 }
 
 
