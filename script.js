@@ -114,7 +114,7 @@ function showResultBox(){
     quiz_box.classList.remove("activeQuiz");
     result_box.classList.add("activeResult");
     const scoreText = result_box.querySelector(".score_text");
-    if (userScore > 3) {
+    if (userScore > 7) {
         let scoreTag = '<span>Parabéns Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
         scoreText.innerHTML = scoreTag;
     }
@@ -126,7 +126,6 @@ function showResultBox(){
         let scoreTag = '<span>Você acertou<p>'+ userScore +'</p>de<p>'+ questions.length  +'</p></span>'
         scoreText.innerHTML = scoreTag;
     }
-
 }
 
 
